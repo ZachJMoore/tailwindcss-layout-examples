@@ -3,6 +3,7 @@
 <head>
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -25,6 +26,7 @@
         a:hover { text-decoration: underline; }
         a:active { text-decoration: underline; }
     </style>
+
 </head>
 
 <body class="text-black bg-white">
@@ -54,6 +56,8 @@
             </div>
         </div>
     </nav>
+
+    <h2 id="pageLayouts" class="m-4 -mb-4 text-grey-darker">Page Layouts</h2>
 
     <div class="w-full px-0 pb-8 flex flex-wrap">
 
@@ -383,6 +387,136 @@
                 </div>
             </div>
         </div>
+
+    </div>
+
+    <h2 id="componentLayouts" class="m-4 -mb-4 text-grey-darker">Component Layouts</h2>
+
+    <div class="w-full px-0 pb-8 flex flex-wrap">
+
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col p-4 mt-8">
+            <div class="w-full flex flex-col p-4 mt-8" style="height: 100px;">
+                <p class="text-grey-dark block pb-2">Search</p>
+                <form class="flex flex-1 justify-start items-center px-4 py-6 bg-grey-lightest overflow-hidden rounded shadow text-grey-darkest">
+                    <button type="submit" class="text-xl text-grey-dark">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="search" class="h-8 mx-2 px-4 flex-1 bg-white rounded-full shadow-inner outline-none"></input>
+                </form>
+            </div>
+
+            <div class="w-full flex flex-col p-4 mt-8" style="height: 120px;">
+                <p class="text-grey-dark block pb-2">Alert</p>
+                <div class="flex flex-1 justify-start items-center px-4 py-6 bg-white border-t-4 border-red-light shadow text-grey-darkest">
+                    <i class="fas fa-exclamation-circle text-xl text-red-light"></i>
+                    <span class="mx-2 px-4 flex-1 font-bold text-center">Oh no, something happened!</span>
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col p-4 mt-8" style="height: 175px">
+                <p class="text-grey-dark block pb-2">Subtle Alert</p>
+                <div class="flex flex-1 justify-start items-center px-4 py-6 bg-white border-t-4 border-grey-light shadow text-grey-darkest">
+                    <i class="fas fa-question-circle text-xl text-grey-light"></i>
+                    <div class="flex flex-1 flex-col">
+                        <span class="mx-2 px-4 flex-1 font-bold text-left text-grey-dark">New update is available. Would you like to upgrade now?</span>
+                        <div class="flex mx-2 my-1 px-4">
+                            <button class="border-2 border-grey-light rounded-full mr-2 font-bold text-left text-grey-dark px-2 hover:bg-grey hover:border-grey hover:text-white">Yes</button>
+                            <button class="border-2 border-grey-light rounded-full font-bold text-left text-grey-dark px-2 hover:bg-grey hover:border-grey hover:text-white">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col p-4 mt-8 mx-auto" style="height: 200px;">
+                <p class="text-grey-dark block pb-2">Collapse</p>
+                <div class="flex flex-1 flex-col bg-grey-lighter overflow-y-auto overflow-x-hidden rounded text-grey-darker">
+                    <details class="flex items-center justify-center p-4 my-1 border-l-4 border-grey-light" style="min-height: 42px">
+                        <summary>Menu</summary>
+                        <span class="flex items-center justify-center my-2 py-2 border-l-1 border-grey-light rounded hover:bg-grey-light cursor-pointer">Option 1</span>
+                        <span class="flex items-center justify-center my-2 py-2 border-l-1 border-grey-light rounded hover:bg-grey-light cursor-pointer">Option 2</span>
+                        <span class="flex items-center justify-center my-2 py-2 border-l-1 border-grey-light rounded hover:bg-grey-light cursor-pointer">Option 3</span>
+                        <span class="flex items-center justify-center my-2 py-2 border-l-1 border-grey-light rounded hover:bg-grey-light cursor-pointer">Option 4</span>
+                        <span class="flex items-center justify-center my-2 py-2 border-l-1 border-grey-light rounded hover:bg-grey-light cursor-pointer">Option 5</span>
+                    </details>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col p-4 mt-8">
+
+            <div class="w-full flex flex-col p-4 mt-8 mx-auto" style="height: 500px; width: 200px;">
+                <p class="text-grey-dark block pb-2">Navigation</p>
+                <div class="flex flex-1 flex-col bg-grey-lighter overflow-y-auto overflow-x-hidden rounded text-grey-darker">
+                    <div class="flex items-center justify-center py-4 my-1 border-l-4 border-blue hover:bg-grey-light cursor-pointer" style="min-height: 42px">
+                        <i class="fas fa-home px-1"></i>
+                        <span class="px-1">Dashboard</span>
+                    </div>
+                    <div class="flex items-center justify-center py-4 my-1 border-l-4 border-grey-light hover:bg-grey-light cursor-pointer" style="min-height: 42px">
+                        <i class="fas fa-bell px-1"></i>
+                        <span class="px-1">Notifications</span>
+                    </div>
+                    <div class="flex items-center justify-center py-4 my-1 border-l-4 border-grey-light hover:bg-grey-light cursor-pointer" style="min-height: 42px">
+                        <i class="fas fa-chart-bar px-1"></i>
+                        <span class="px-1">Analytics</span>
+                    </div>
+                    <div class="flex items-center justify-center py-4 my-1 border-l-4 border-grey-light hover:bg-grey-light cursor-pointer" style="min-height: 42px">
+                        <i class="fas fa-paint-roller px-1"></i>
+                        <span class="px-1">Maintenance</span>
+                    </div>
+                    <div class="flex items-center justify-center py-4 my-1 border-l-4 border-grey-light hover:bg-grey-light cursor-pointer" style="min-height: 42px">
+                        <i class="fas fa-users px-1"></i>
+                        <span class="px-1">Users</span>
+                    </div>
+                    <div class="flex items-center justify-center py-4 my-1 border-l-4 border-grey-light hover:bg-grey-light cursor-pointer" style="min-height: 42px">
+                        <i class="fas fa-cogs px-1"></i>
+                        <span class="px-1">Settings</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col p-4 mt-8">
+
+            <div class="w-full flex flex-col p-4 mt-8" style="height: 230px;">
+                <p class="text-grey-dark block pb-2">Card</p>
+                <div class="flex flex-1 items-center p-4 bg-grey-lightest overflow-hidden rounded shadow text-grey-darker">
+                    <img class="block h-24 rounded-full shadow mr-6" src="https://avatars2.githubusercontent.com/u/4323180?s=400&u=4962a4441fae9fba5f0f86456c6c506a21ffca4f&v=4" alt="">
+                    <div class="text-center text-left ">
+                        <div class="mb-4">
+                            <p class="text-xl leading-tight">Adam Wathan</p>
+                            <p class="text-sm leading-tight text-grey-dark">Developer at NothingWorks Inc.</p>
+                        </div>
+                        <div>
+                            <button class="text-xs font-semibold rounded-full px-4 py-1 leading-normal bg-white border-2 border-blue text-purple hover:bg-purple hover:text-white">Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-full flex flex-col p-4 mt-8" style="min-height: 500px;">
+                <p class="text-grey-dark block pb-2">Card</p>
+                <div class="flex flex-1 flex-col justify-around bg-grey-lightest overflow-hidden rounded shadow text-grey-darkest">
+                    <div class="w-full bg-cover bg-bottom" style="background-image: url(https://tailwindcss.com/img/card-top.jpg); height: 50%;"></div>
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                            <p class="text-grey-darker text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                    <div class="px-6 py-4">
+                        <span class="inline-block bg-grey-light rounded-full px-3 py-1 text-sm font-semibold text-grey-darkest mr-2 mt-2">#photography</span>
+                        <span class="inline-block bg-grey-light rounded-full px-3 py-1 text-sm font-semibold text-grey-darkest mr-2 mt-2">#travel</span>
+                        <span class="inline-block bg-grey-light rounded-full px-3 py-1 text-sm font-semibold text-grey-darkest mt-2">#winter</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
 
     </div>
 
